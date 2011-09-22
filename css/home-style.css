@@ -1,0 +1,141 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* =Structure
+----------------------------------------------- */
+#wrap-container {
+	position:relative;
+	overflow:hidden;
+}
+	#bg-container {
+		height:515px;
+		overflow:hidden;
+	}
+	#bg-container div{
+		height:515px;
+		background-color:transparent;
+		background-position:50% 0;
+		background-repeat:no-repeat;
+	}
+		
+	#content-home {
+		position:relative;
+		top:-385px;
+		width:940px;
+		margin:0 auto;
+		padding: 0 31px 22px 27px;
+		background-color:transparent;
+		background-position:50% 0%;
+		background-repeat:no-repeat;
+	}
+		
+		#slide-hover {
+			/*position:absolute;*/
+			top:0;
+			left:27px;
+			display:block;
+			width:620px;
+			height:250px;
+		}
+		#nav-box {
+			position:relative;
+			top:0;
+			left:0px;
+			width:475px;
+			height:60px;
+			padding:10px 135px 10px 10px;
+			margin:20px 0;
+			background-color:rgba(255, 255, 255, 0.8);
+		}
+		#nav-box h2{
+			font-size: 19px;
+			line-height: 25px;
+			height:25px;
+		}
+		#nav-box p{
+			height:14px;
+			overflow:hidden;
+			font-size:12px;
+		}
+		#nav-box p.hover {
+			text-decoration:underline;
+		}
+		
+		#slide-nav {
+			position:absolute;
+			bottom:10px;
+			right:10px;
+		}
+		#slide-nav li {
+			float:left;
+		}
+		#slide-nav a {
+			display:block;
+			width:8px;
+			padding:5px;
+			text-indent:-9999px;
+			background: transparent url(images/empty-bullet.png) center no-repeat;
+		}
+		
+		#slide-nav a.selected {
+			font-weight:bold;
+			background: transparent url(images/black-bullet.png) center no-repeat;
+		}
+		#slide-nav a.navigator.back {
+			background: transparent url(images/backward.png) center no-repeat;
+		}
+		#slide-nav a.navigator.back.hover {
+			background: transparent url(images/backward-hover.png) center no-repeat;
+		}
+		#slide-nav a.navigator.fore {
+			background: transparent url(images/foreward.png) center no-repeat;
+		}
+		#slide-nav a.navigator.fore.hover {
+			background: transparent url(images/foreward-hover.png) center no-repeat;
+		}
