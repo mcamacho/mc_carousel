@@ -71,7 +71,7 @@ table {
 		margin:0 auto;
 		padding: 0 31px 22px 27px;
 		background-color:transparent;
-		background-position:50% 0%;
+		background-position:50% 0;
 		background-repeat:no-repeat;
 	}
 		
@@ -86,11 +86,12 @@ table {
 		#nav-box {
 			position:relative;
 			top:0;
-			left:0px;
+			left:0;
 			width:475px;
 			height:60px;
 			padding:10px 135px 10px 10px;
 			margin:20px 0;
+            background-color:#ddd;
 			background-color:rgba(255, 255, 255, 0.8);
 		}
 		#nav-box h2{
@@ -116,6 +117,7 @@ table {
 			float:left;
 		}
 		#slide-nav a {
+            direction: ltr;
 			display:block;
 			width:8px;
 			padding:5px;
